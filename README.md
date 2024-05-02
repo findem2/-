@@ -5,12 +5,12 @@
 ```bash
 git add .
 git commit -m "feat: add [DateTime]"
-git push origin develop
+ 
 ```
 
 - Date 대신에 커밋 입력한 시간
    ```bash
-   git commit -m "feat: add 24.04.30 12:32"
+   git commit -m "feat: add 24.05.01 15:49"
    ```
 - 위의 3줄 순서대로 zsh에서 입력
 
