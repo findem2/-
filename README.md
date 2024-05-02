@@ -5,7 +5,7 @@
 ```bash
 git add .
 git commit -m "feat: add [DateTime]"
- 
+git push origin develop
 ```
 
 - Date 대신에 커밋 입력한 시간
