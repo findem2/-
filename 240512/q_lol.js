@@ -215,8 +215,16 @@ for (let e = 0; e < LolItems.length; e++) {
 
 // 4. 특정 아이템보다 비싼 아이템을 모두 출력하기
 // 피바라기 보다 비싼 아이템 모두 출력.
+let cost;
 for (let i = 0; i < LolItems.length; i++) {
-    if (LolItems[i].cost <=  3000) {
+    if (LolItems[i].name == "피바라기") {
         console.log(LolItems[i].name);
+        cost = LolItems[i].cost;
+    }
+}
+
+for (let e = 0; e < LolItems.length; e++) {
+    if (LolItems[e].cost > cost) {
+        console.log(LolItems[e]);
     }
 }
