@@ -4,23 +4,36 @@
 // ***
 // ****
 // *****
-function increaseStar(a){
-for(let i = 1; i < 6; i++ ){
-    console.log("*".repeat(i))
-}}
-increaseStar(5);
-
-for(let i = 0; i < 5; i++ ){
-    console.log("*".repeat(i + 1));
+function increaseStar(){
+    for(let i = 0; i < 5; i++ ){
+        // console.log("*".repeat(i + 1))
+        let temp = "";
+        for(let j = 0; j <= i; j++){
+            temp += "*";
+        }
+        console.log(temp);
+    }
 }
+increaseStar();
+
+// for(let i = 0; i < 5; i++ ){
+//     console.log("*".repeat(i + 1));
+// }
 // 2
 // *****
 // ****
 // ***
 // **
 // *
-function decreaseStar(a){
-for(let i = 0; i < 5; i-- ){
-    console.log("*".repeat(i))
-}}
-decreaseStar(5);
+function decreaseStar(){
+    for(let i = 5; i > 0; i-- ){
+        console.log("*".repeat(i))
+        let temp = "";
+        for(let j = 0; j < i; j++){
+            temp += "*";
+        }
+        console.log(temp);
+    }
+    console.log("ab".repeat(3));
+}
+decreaseStar();
