@@ -1,6 +1,5 @@
-```bash
-npm init
-npm i express morgan dotenv cookie-parser multer@1.4.4 express-session session-file-store cors
-npm i -D nodemon
-npm start
-```
+|번호|이름|나이|전화번호|성별|
+|---|---|---|---|---|
+|1|손민복|29|010-1234-1234|남|
+
+![alt text](image.png)
