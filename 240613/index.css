@@ -1,3 +1,36 @@
-#table{
-    background-color: aliceblue;
+#table thead tr {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    border-spacing: 0 30px 0 30px;
+    width: 300px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* #info {
+    border: 1px solid green;
+    background-color: aqua;
+    color: black;
+    margin: 0;
+    pad: 0;
+}  */
+
+#fe1 #fe3 #fe5 #fe7{
+    background-color: rgb(29, 135, 229);
+    color-scheme: blue;
+}
+
+#fe2 #fe4 #fe6{
+    background-color: white;
+}
+
+#table tbody tr {
+    background-color: rgb(29, 135, 229);
+    color-scheme: blue;
+}
+
+#table tbody tr:nth-child(2n) {
+    background-color: white;
 }

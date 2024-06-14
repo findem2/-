@@ -64,9 +64,7 @@ tableElem.innerHTML +=
         <th>성별</th>
     </tr>
 </thead>
-<tbody id = "info">
-    
-    
+<tbody id="info">
 </tbody>
 <tfoot>
 </tfoot>`
@@ -74,8 +72,8 @@ tableElem.innerHTML +=
 const infoElem = document.getElementById("info");
 for(let i = 0; i < 7; i++){
     infoElem.innerHTML += 
-`   <tr >    
-        <td id = ${[i]}>${i}</td>
+`   <tr>    
+        <td>${i+1}</td>
         <td>${classAWS[i].name}</td>
         <td>${classAWS[i].age}</td>
         <td>${classAWS[i].phoneNum}</td>
@@ -108,3 +106,5 @@ for(let i = 0; i < 7; i++){
 // </tbody>
 // <tfoot>
 // </tfoot>`
+
+document.body.innerHTML += '<link rel="stylesheet" href="./index.css">'
