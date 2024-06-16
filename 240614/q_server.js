@@ -14,11 +14,30 @@ dotenv.config();
 
 const app = express();
 
-app.set("port", process.env.PORT || 3000);
 
+app.use(cors({ origin: "http://localhost" , credentials: true }));
 app.use(morgan("dev"));
-app.use
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser(process.env.COOKIE_SECRET || "aws"));
 
+app.use(
+  session({
+      resave: true,
+      saveUninitialized: false,
+      secret: "test",
+      name: "user-session", // connect.sid
+      store: new FileStore({
+          reapInterval: 10,// 10초뒤에 파일을 지운다
+          path: "./test-session"
+      }),
+      cookie: {
+          maxAge: 5 * 1000,
+      },
+  })
+);
+
+app.set("port", process.env.PORT || 3000);
 app.listen(app.get("port"), () => {
     console.log(app.get("port"), "server open");
   });  
