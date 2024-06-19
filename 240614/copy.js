@@ -8,11 +8,12 @@ import path from "path";
 import session from "express session";
 import FileStore from "session-file-store";
 
+
 dotenv.config();
 
 const app = express();
 
-const storage = multer.diskStorage
+const storage = multer.diskStorage({})
 
 app.use(cors)
 app.use(morgan("dev"))
@@ -23,3 +24,10 @@ app.set("port", process.env.PORT || 3000);
 app.listen(app.get("port"), () => {
     console.log(app.get("port"), "server open");
 });
+
+app.set("port", process.env.PORT || 3000);
+app.listen(app.get("port"), () =>{
+    console.log(app.get("port"),"server open");
+})
+
+express morgan dotenv cookiepaser muleter

@@ -1,5 +1,6 @@
 {
   "type": "module",
+  // ^ 이거 넣어야함
   "name": "240614",
   "version": "1.0.0",
   "description": "```bash touch .env npm init -y npm i express morgan dotenv cookie-parser multer cors express-session session-file-store npm ```",
@@ -7,6 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start":"nodemon server.js"
+    // ^ 이거 넣어야함
   },
   "keywords": [],
   "author": "",
