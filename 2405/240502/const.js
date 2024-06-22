@@ -5,7 +5,7 @@ const obj = {};
 obj.a = 3;
 
 // 상수 obj2를 프로퍼티 a 값으로 4 그리고 프로퍼티 b에 손민복을 가지고 있는 객체를 초기화 한다.
-const obj2 = { a : 4, b : "손민복" };
+const obj2 = [{ a : 4, b : "손민복" },{ a : 5, b : "ths" }];
 
 // 상수 obj 빈 객체로 초기화 한다.
 const obj = {};
