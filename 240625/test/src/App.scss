@@ -1,0 +1,30 @@
+.id{
+  display:flex;
+}
+
+.child{
+  flex:1;
+  text-align:center;
+  // border: 1px 0px 1px 0px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.child:hover{
+  cursor: wait
+}
+.id:nth-child(1){
+  flex:1;
+  text-align:center;
+  // border: 1px 0px 1px 0px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+// .id:nth-child(2){
+//   background-color:yellow;
+// }
+
+// .id:nth-child(3){
+//   background-color:green;
+// }
