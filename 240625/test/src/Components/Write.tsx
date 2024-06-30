@@ -72,7 +72,7 @@ const Write: FC<Props> = ({ write }) => {
         className="flex-1 border rounded border-gray-500"
         type="text"
         id="todo-content"
-        value={[content,writer,title]}
+        value={[content]}
         onChange={Input}
       />
       <input
@@ -90,22 +90,11 @@ const Write: FC<Props> = ({ write }) => {
         onChange={Input}
       />
       <button
-        className={[
-          "border",
-          "border-gray-400",
-          "rounded",
-          "p-1",
-          "px-5",
-          "bg-blue",
-          "select-none",
-        ].join(" ")}
+        className="box-border h-10 w-20 bg-yellow-300 hover:bg-yellow-500 ring ring-yellow-800 ring-offset-0"
         type="submit"
       >
         추가
       </button>
-      <a href="javascript:history.back()" type="button"><button 
-          // onClick={this.cancel} 
-          className="box-border h-10 w-20 bg-yellow-300 hover:bg-yellow-500 ring ring-yellow-800 ring-offset-0">취소</button></a>
       <a href="javascript:history.back()" type="button"><button 
           // onClick={this.cancel} 
           className="box-border h-10 w-20 bg-yellow-300 hover:bg-yellow-500 ring ring-yellow-800 ring-offset-0">취소</button></a>
